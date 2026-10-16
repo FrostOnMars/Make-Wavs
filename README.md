@@ -1,9 +1,8 @@
 # Wav Maker
 
-A small command-line tool that converts MP3 files to 16-bit PCM WAV files.
+A small command-line tool that converts MP3 files to 16-bit PCM WAV files. Born from being so bored at work that email notifications needed to become Yoshi "MLEM" noises to keep their listener awake.
 
-Born from being so bored at work that email notifications needed to become
-Yoshi "MLEM" noises to keep their listener awake. Unfortunately, duty demanded a WAV file. The Wav Maker answered the call.
+Duty demanded a WAV file. The Wav Maker answered the call.
 
 ## Requirements
 
