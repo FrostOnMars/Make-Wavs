@@ -1,0 +1,42 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "Mp3ToWav/1.0.0": {
+        "dependencies": {
+          "NLayer": "3.0.0"
+        },
+        "runtime": {
+          "Mp3ToWav.dll": {}
+        }
+      },
+      "NLayer/3.0.0": {
+        "runtime": {
+          "lib/net8.0/NLayer.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0",
+            "localPath": "NLayer.dll"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Mp3ToWav/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NLayer/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aQrCT93NjIrJNXA7wiTSHMp9OUhGNb8YTJAwnsx2FtaNdAe74vwfguFExf6QFNU72XhNPb/bLAcdMbxvaNZgWg==",
+      "path": "nlayer/3.0.0",
+      "hashPath": "nlayer.3.0.0.nupkg.sha512"
+    }
+  }
+}
