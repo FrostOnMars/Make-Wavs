@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "p62FqIqp8Rk=",
+  "dgSpecHash": "x7JTaBsz428=",
   "success": true,
-  "projectFilePath": "C:\\Users\\MikaylaMartin\\source\\repos\\Make Wavs\\Mp3ToWav.csproj",
+  "projectFilePath": "c:\\Users\\MikaylaMartin\\source\\repos\\Make Wavs\\Mp3ToWav.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MikaylaMartin\\.nuget\\packages\\nlayer\\3.0.0\\nlayer.3.0.0.nupkg.sha512"
   ],

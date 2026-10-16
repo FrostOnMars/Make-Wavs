@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MikaylaMartin\\source\\repos\\Make Wavs\\Mp3ToWav.csproj": {}
+    "c:\\Users\\MikaylaMartin\\source\\repos\\Make Wavs\\Mp3ToWav.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MikaylaMartin\\source\\repos\\Make Wavs\\Mp3ToWav.csproj": {
+    "c:\\Users\\MikaylaMartin\\source\\repos\\Make Wavs\\Mp3ToWav.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MikaylaMartin\\source\\repos\\Make Wavs\\Mp3ToWav.csproj",
+        "projectUniqueName": "c:\\Users\\MikaylaMartin\\source\\repos\\Make Wavs\\Mp3ToWav.csproj",
         "projectName": "Mp3ToWav",
-        "projectPath": "C:\\Users\\MikaylaMartin\\source\\repos\\Make Wavs\\Mp3ToWav.csproj",
+        "projectPath": "c:\\Users\\MikaylaMartin\\source\\repos\\Make Wavs\\Mp3ToWav.csproj",
         "packagesPath": "C:\\Users\\MikaylaMartin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MikaylaMartin\\source\\repos\\Make Wavs\\obj\\",
+        "outputPath": "c:\\Users\\MikaylaMartin\\source\\repos\\Make Wavs\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,6 +1,6 @@
 using Mp3ToWav;
 
-const string Usage = """
+const string usage = """
     Usage: Mp3ToWav <input.mp3 | folder> [more inputs...] [-o <outputFolder>] [-f]
 
       input        One or more .mp3 files or folders containing .mp3 files.
@@ -13,14 +13,14 @@ const string Usage = """
 
 var inputs = new List<string>();
 string? outDir = null;
-bool force = false;
+var force = false;
 
 for (int i = 0; i < args.Length; i++)
 {
     switch (args[i])
     {
         case "-h" or "--help" or "/?":
-            Console.WriteLine(Usage);
+            Console.WriteLine(usage);
             return 0;
         case "-o" or "--out":
             if (++i >= args.Length) { Console.Error.WriteLine("Missing value for -o."); return 1; }
@@ -37,7 +37,7 @@ for (int i = 0; i < args.Length; i++)
 
 if (inputs.Count == 0)
 {
-    Console.Error.WriteLine(Usage);
+    Console.Error.WriteLine(usage);
     return 1;
 }
 
@@ -71,7 +71,7 @@ if (outDir is not null)
 
 foreach (var mp3 in files)
 {
-    string wav = Path.Combine(outDir ?? Path.GetDirectoryName(Path.GetFullPath(mp3))!,
+    var wav = Path.Combine(outDir ?? Path.GetDirectoryName(Path.GetFullPath(mp3))!,
                               Path.GetFileNameWithoutExtension(mp3) + ".wav");
     if (File.Exists(wav) && !force)
     {
@@ -86,9 +86,25 @@ foreach (var mp3 in files)
     }
     catch (Exception ex)
     {
-        failures.Add((mp3, ex.Message));
         Console.Error.WriteLine($"Failed: {mp3}: {ex.Message}");
-        try { File.Delete(wav); } catch { }
+        var reason = ex.Message;
+        try
+        {
+            File.Delete(wav);
+        }
+        catch (Exception cleanupEx) when (cleanupEx is IOException
+                                          or UnauthorizedAccessException
+                                          or ArgumentException
+                                          or NotSupportedException
+                                          or System.Security.SecurityException)
+        {
+            var cleanupReason = $"Could not remove partial output '{wav}' "
+                               + $"({cleanupEx.GetType().Name}): {cleanupEx.Message}";
+            reason += $"; cleanup also failed: {cleanupEx.GetType().Name}: {cleanupEx.Message}";
+            Console.Error.WriteLine($"Cleanup failed: {cleanupReason}");
+        }
+
+        failures.Add((mp3, reason));
     }
 }
 

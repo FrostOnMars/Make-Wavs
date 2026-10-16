@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mp3ToWav")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+94006535fdfb6570a1ac113f3b4505d1b9875c14")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mp3ToWav")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mp3ToWav")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -16,3 +16,4 @@ C:\Users\MikaylaMartin\source\repos\Make Wavs\obj\Debug\net10.0\refint\Mp3ToWav.
 C:\Users\MikaylaMartin\source\repos\Make Wavs\obj\Debug\net10.0\Mp3ToWav.pdb
 C:\Users\MikaylaMartin\source\repos\Make Wavs\obj\Debug\net10.0\Mp3ToWav.genruntimeconfig.cache
 C:\Users\MikaylaMartin\source\repos\Make Wavs\obj\Debug\net10.0\ref\Mp3ToWav.dll
+C:\Users\MikaylaMartin\source\repos\Make Wavs\obj\Debug\net10.0\Mp3ToWav.sourcelink.json
